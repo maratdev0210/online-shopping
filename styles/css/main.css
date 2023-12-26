@@ -1,0 +1,115 @@
+:root {
+  font-size: 1rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  height: 500vh;
+}
+
+.sidebar {
+  background-color: #d5bdaf;
+  margin-top: 50px;
+  width: 15%;
+  height: 80vh;
+  position: sticky;
+  top: 0px;
+}
+.sidebar .filter .filterSection .panel {
+  border: solid 1px grey;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: white;
+}
+.sidebar .filter .filterSection .panel span:hover {
+  opacity: 0.5;
+}
+.sidebar .filter .filterSection .panel span {
+  border: inherit;
+}
+@media (max-width: 600px) {
+  .sidebar .filter .filterSection .panel {
+    width: 20%;
+    font-size: 1.1rem;
+  }
+}
+.sidebar .filter .collections li {
+  list-style-type: none;
+  font-size: 1.3rem;
+  margin: 0px;
+  position: relative;
+  right: 20px;
+}
+.sidebar .filter .collections ul {
+  border: solid 1px black;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header {
+  background-color: #fefae0;
+  height: 10vh;
+  margin-top: 0px;
+}
+header nav {
+  border: solid 1px black;
+  border-color: #fefae0;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+header nav li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #14213d;
+}
+@media (max-width: 600px) {
+  header nav a {
+    font-size: 0.9rem;
+  }
+  header nav ul {
+    gap: 10px;
+  }
+}
+
+.items {
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  border: solid 1px black;
+}
+.items div img {
+  width: 100%;
+}
+.items div div {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1rem;
+}
+.items div div img {
+  width: 48px;
+}
+
+.dialog {
+  width: 50%;
+  border: solid 1px black;
+  position: absolute;
+}
+
+/*# sourceMappingURL=main.css.map */

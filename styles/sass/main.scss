@@ -1,0 +1,127 @@
+$links-color: #14213d;
+$navigation-color: #fefae0;
+$sidebar-color: #d5bdaf;
+
+:root {
+    font-size: 1rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 500vh;
+}
+
+.sidebar {
+    .filter {
+        .filterSection {
+            .panel {
+                border: solid 1px grey;
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: white;
+            }
+            .panel span:hover {
+                opacity: 0.5;
+            }
+            .panel span {
+                border: inherit;
+            }
+            @media (max-width: 600px) {
+                .panel {
+                    width: 20%;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .collections {
+            li {
+                list-style-type: none;
+                font-size: 1.3rem;
+                margin: 0px;
+                position: relative;
+                right: 20px;
+            }
+            ul {
+                border: solid 1px black;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                
+            }
+        }
+    }
+    background-color: $sidebar-color;
+    margin-top: 50px;
+    width: 15%;
+    height: 80vh;
+    position: sticky;
+    top: 0px;
+}
+
+header {
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        li {
+            list-style-type: none;
+            padding-top: 10px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $links-color;
+        }
+        @media (max-width: 600px) {
+            a {
+                font-size: 0.9rem;
+            }
+            ul {
+               gap: 10px;
+            }
+        }
+        border: solid 1px black;
+        border-color: $navigation-color;
+    }
+    background-color: $navigation-color;
+    height: 10vh;
+    margin-top: 0px;
+}
+
+.items {
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    border: solid 1px black; 
+    div {
+        img {
+            width: 100%;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.1rem;
+            img {
+                width: 48px;
+            }
+        }
+    }
+}
+
+.dialog {
+    width: 50%;
+    border: solid 1px black;
+    position: absolute;
+}
