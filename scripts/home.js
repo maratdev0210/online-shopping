@@ -7,7 +7,7 @@ const buttons = document.querySelector('.buttons');
 const collections = document.querySelector('.collections');
 const panel = document.querySelector('.panel');
 const itemsSection = document.querySelector('.items');
-const assetsPath = 'C:\\Users\\ramil\\repos\\online-shopping\\assets';
+const assetsPath = '..\\assets';
 
 
 let showClothes = [];
